@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Give Me a Sign</title>
+    <link rel="stylesheet" href="./assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="hero is-danger is-small">
+      <div class="hero-body has-text-centered">
+        <h1 class="title has-text-white">Give Me a Sign</h1>
+      </div>
+    </section>
+
+    <main class="section">
+      <section class="container" aria-label="Horoscope search">
+        <section class="columns is-centered">
+          <article class="column is-10-mobile is-8-tablet is-7-desktop">
+            <section class="card app-card">
+              <header class="card-header has-background-danger">
+                <p class="card-header-title has-text-white is-centered">
+                  What's Your Horoscope Today?
+                </p>
+              </header>
+
+              <section class="card-content has-text-centered">
+                <p class="mb-4 has-text-grey">Enter your sun sign:</p>
+
+                <form id="horoscope-form" class="field has-addons has-addons-centered app-search-row">
+                  <label for="sign-input" class="is-sr-only">Sun sign</label>
+                  <p class="control is-expanded">
+                    <input
+                      id="sign-input"
+                      class="input"
+                      placeholder="e.g. Aries"
+                    />
+                  </p>
+                  <p class="control">
+                    <button id="search-btn" class="button is-danger" type="submit">
+                      Get Horoscope
+                    </button>
+                  </p>
+                </form>
+
+                <output id="horoscope-output" class="box mt-5 has-text-left" aria-live="polite">
+                  Sun Sign: <span id="sun-sign"></span>
+                  <br />
+                  Date: <span id="date"></span>
+                  <br />
+                  Overall Scores: <span id="overall-scores"></span>
+                </output>
+              </section>
+
+              <footer class="card-footer">
+                <p class="card-footer-item has-text-centered is-size-7">
+                  Use your own API key. Open the console to debug your request.
+                </p>
+              </footer>
+            </section>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

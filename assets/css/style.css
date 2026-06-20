@@ -1,0 +1,56 @@
+body {
+	min-height: 100vh;
+	font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+	background:
+		radial-gradient(circle at 10% 5%, rgba(211, 75, 45, 0.12), transparent 28%),
+		radial-gradient(circle at 90% 85%, rgba(245, 157, 66, 0.16), transparent 30%),
+		linear-gradient(180deg, #fff9f0, #fef0d8);
+}
+
+.hero .title {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.app-card {
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 18px 45px rgba(31, 36, 48, 0.14);
+	animation: card-rise 450ms ease-out;
+}
+
+.app-search-row {
+	max-width: 520px;
+	margin-inline: auto;
+}
+
+#horoscope-output {
+	line-height: 1.7;
+	max-width: 520px;
+	margin-inline: auto;
+}
+
+@keyframes card-rise {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 768px) {
+	.app-search-row {
+		display: block;
+	}
+
+	.app-search-row .control {
+		width: 100%;
+	}
+
+	.app-search-row .button {
+		width: 100%;
+		margin-top: 0.75rem;
+	}
+}
