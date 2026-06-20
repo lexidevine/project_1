@@ -16,7 +16,7 @@ function getDailyHoroscope(sunSign) {
     if (!cleanedSign) {
         sunSignInput.textContent = "";
         dateOfHoroscope.textContent = "";
-        overallScore.textContent = "Please enter a sun sign (e.g. Aries).";
+        overallScore.textContent = "";
         return;
     }
 
@@ -34,21 +34,23 @@ function getDailyHoroscope(sunSign) {
             "Content-Type": "application/json"
         }
     })
-        .then((response) => response.json().then((data) => ({ response, data })))
-        .then(({ response, data }) => {
+        .then((response) => response.json().then((responseJson) => ({ response, responseJson })))
+        .then(({ response, responseJson }) => {
+            const horoscopeData = responseJson?.data ?? responseJson;
+
             if (!response.ok) {
-                const message = data?.message || "Could not fetch horoscope.";
+                const message = responseJson?.message || responseJson?.error?.message || "Could not fetch horoscope.";
                 throw new Error(message);
             }
 
-            if (!data?.scores) {
+            if (!horoscopeData?.scores) {
                 throw new Error("No horoscope data returned for that sign.");
             }
 
-            console.log("Horoscope data:", data);
-            sunSignInput.textContent = data.sign;
-            dateOfHoroscope.textContent = data.date;
-            overallScore.textContent = data.scores.overall;
+            console.log("Horoscope data:", horoscopeData);
+            sunSignInput.textContent = horoscopeData.sign;
+            dateOfHoroscope.textContent = horoscopeData.date;
+            overallScore.textContent = horoscopeData.scores.overall;
         })
         .catch((error) => {
             console.error("API request failed:", error);
