@@ -1,4 +1,4 @@
-// Horoscope API Data from FreeAstroAPI
+// Daily (Sign) Horoscope API Data from FreeAstroAPI
 const HOROSCOPE_STORE = {
   "project": "Give Me a Sign",
   "version": 1,
