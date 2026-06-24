@@ -27,7 +27,7 @@
               </header>
 
               <section class="card-content has-text-centered">
-                <p class="mb-4 has-text-grey">Enter your sun sign:</p>
+                <p class="mb-4 has-text-grey">Enter your sign:</p>
 
                 <form id="horoscope-form" class="field has-addons has-addons-centered app-search-row">
                   <label for="sign-input" class="is-sr-only">Sun sign</label>
@@ -35,7 +35,7 @@
                     <input
                       id="sign-input"
                       class="input"
-                      placeholder="e.g. Aries"
+                      placeholder="e.g. Virgo"
                     />
                   </p>
                   <p class="control">
@@ -46,11 +46,26 @@
                 </form>
 
                 <output id="horoscope-output" class="box mt-5 has-text-left" aria-live="polite">
-                  Sun Sign: <span id="sun-sign"></span>
-                  <br />
-                  Date: <span id="date"></span>
-                  <br />
-                  Overall Daily Score: <span id="overall-scores"></span>
+                  <p><strong>Sign:</strong> <span id="sun-sign"></span></p>
+                  <p><strong>Date:</strong> <span id="date"></span></p>
+                  <p><strong>Theme of the Day:</strong> <span id="theme"></span></p>
+                  <p><strong>Advice:</strong> <span id="advice"></p>
+
+                  <hr class="my-3" />
+
+                  <p><strong>Overall Daily Score:</strong> <span id="overall-scores"></span></p>
+                  <div class="score-grid mt-2">
+                    <p><strong>Love:</strong> <span id="love-score"></span></p>
+                    <p><strong>Career:</strong> <span id="career-score"></span></p>
+                    <p><strong>Money:</strong> <span id="money-score"></span></p>
+                    <p><strong>Health:</strong> <span id="health-score"></span></p>
+                  </div>
+
+                  <hr class="my-3" />
+
+                  <p><strong>Lucky Color:</strong> <span id="lucky-color"></span></p>
+                  <p><strong>Lucky Number:</strong> <span id="lucky-number"></span></p>
+                  <p><strong>Lucky Time:</strong> <span id="lucky-time"></span></p>
                 </output>
               </section>
 

@@ -29,6 +29,16 @@ body {
 	margin-inline: auto;
 }
 
+#horoscope-output p {
+	margin-bottom: 0.25rem;
+}
+
+.score-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.25rem 1rem;
+}
+
 @keyframes card-rise {
 	from {
 		opacity: 0;
@@ -52,5 +62,9 @@ body {
 	.app-search-row .button {
 		width: 100%;
 		margin-top: 0.75rem;
+	}
+
+	.score-grid {
+		grid-template-columns: 1fr;
 	}
 }
