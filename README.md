@@ -33,7 +33,7 @@ Instead of searching different sites for horoscope content, users can type a sig
 
 ## Live Link
 
-[Open the deployed app](file:///C:/Users/lexid/code/Bootcamp/bootcamp-2026/project_1/index.html)
+[Open the deployed app](https://lexidevine.github.io/project_1/)
 
 ## Features
 
