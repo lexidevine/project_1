@@ -10,7 +10,7 @@ const HOROSCOPE_STORE = {
   "horoscopes": {
     "aries": {
       "sign": "aries",
-      "date": "2026-06-17",
+      "date": "2026-06-27",
       "scores": {
         "overall": 83,
         "love": 89,
@@ -25,7 +25,7 @@ const HOROSCOPE_STORE = {
       },
       "content": {
         "theme": "Initiative",
-        "text": "With the Moon in Cancer (New Moon), Aries picks up the day's sky through a fire lens. Your ruler Mars is in a supportive condition from the 2nd house, shaping today's love direction. For Aries, this works best through clear directness. Center your decisions on love and use clear directness to convert momentum into concrete results.",
+        "text": "With the Moon in Sagittarius (Waxing Gibbous), Aries picks up the day's sky through a fire lens. Your ruler Mars is in a supportive condition from the 2nd house, shaping today's love direction. For Aries, this works best through clear directness. Center your decisions on love and use clear directness to convert momentum into concrete results.",
         "keywords": [
           "Initiative",
           "Boldness",
@@ -41,7 +41,7 @@ const HOROSCOPE_STORE = {
     },
     "taurus": {
       "sign": "taurus",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 80,
         "love": 76,
@@ -72,7 +72,7 @@ const HOROSCOPE_STORE = {
     },
     "gemini": {
       "sign": "gemini",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 85,
         "love": 89,
@@ -104,7 +104,7 @@ const HOROSCOPE_STORE = {
     },
     "cancer": {
       "sign": "cancer",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 86,
         "love": 92,
@@ -134,7 +134,7 @@ const HOROSCOPE_STORE = {
     },
     "leo": {
       "sign": "leo",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 59,
         "love": 55,
@@ -163,7 +163,7 @@ const HOROSCOPE_STORE = {
     },
     "virgo": {
       "sign": "virgo",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 84,
         "love": 82,
@@ -178,7 +178,7 @@ const HOROSCOPE_STORE = {
       },
       "content": {
         "theme": "Analysis",
-        "text": "With the Moon in Scorpio (First Quarter), Virgo picks up the day's sky through a earth lens. Your ruler Mercury is in a supportive condition from the 11th house, shaping today's career direction. For Virgo, this works best through structure and execution. Center your decisions on career and use structure and execution to convert momentum into concrete results.",
+        "text": "With the Moon in Sagittarius (Waxing Gibbous), Virgo picks up the day's sky through a earth lens. Your ruler Mercury is in a supportive condition from the 11th house, shaping today's career direction. For Virgo, this works best through structure and execution. Center your decisions on career and use structure and execution to convert momentum into concrete results.",
         "keywords": [
           "Detail",
           "Analysis",
@@ -192,7 +192,7 @@ const HOROSCOPE_STORE = {
     },
     "libra": {
       "sign": "libra",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 84,
         "love": 92,
@@ -222,7 +222,7 @@ const HOROSCOPE_STORE = {
     },
     "scorpio": {
       "sign": "scorpio",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 86,
         "love": 92,
@@ -237,7 +237,7 @@ const HOROSCOPE_STORE = {
       },
       "content": {
         "theme": "Mystery",
-        "text": "With the Moon in Scorpio (First Quarter), Scorpio picks up the day's sky through a water lens. Your ruler Mars is in a supportive condition from the 7th house, shaping today's love direction. For Scorpio, this works best through emotional clarity and care. Center your decisions on love and use emotional clarity and care to convert momentum into concrete results.",
+        "text": "With the Moon in Sagittarius (Waxing Gibbous), Scorpio picks up the day's sky through a water lens. Your ruler Mars is in a supportive condition from the 7th house, shaping today's love direction. For Scorpio, this works best through emotional clarity and care. Center your decisions on love and use emotional clarity and care to convert momentum into concrete results.",
         "keywords": [
           "Intensity",
           "Mystery",
@@ -253,7 +253,7 @@ const HOROSCOPE_STORE = {
     },
     "sagittarius": {
       "sign": "sagittarius",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 72,
         "love": 69,
@@ -285,7 +285,7 @@ const HOROSCOPE_STORE = {
     },
     "capricorn": {
       "sign": "capricorn",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 78,
         "love": 80,
@@ -317,7 +317,7 @@ const HOROSCOPE_STORE = {
     },
     "aquarius": {
       "sign": "aquarius",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 77,
         "love": 82,
@@ -350,7 +350,7 @@ const HOROSCOPE_STORE = {
     },
     "pisces": {
       "sign": "pisces",
-      "date": "2026-06-24",
+      "date": "2026-06-27",
       "scores": {
         "overall": 86,
         "love": 92,
