@@ -1,67 +1,107 @@
-# <Your-Project-Title>
+# Give Me a Sign
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Give Me a Sign is a beginner-friendly horoscope web app where users type a zodiac sign and instantly get a daily reading.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+I originally planned to use a live API, but ran into CORS issues during development. To keep the project classroom-ready and easy to run, the horoscope data is stored locally in JavaScript.
 
-## Table of Contents (Optional)
+### Motivation
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+The goal was to make something fun that also practices core front-end skills: forms, events, and DOM updates. Astrology gave the project personality, and the coding goals kept it practical.
 
+### Problem It Solves
+
+Instead of searching different sites for horoscope content, users can type a sign and get a clean, formatted daily summary in one place.
+
+### What I Learned
+
+- Structuring and querying nested JSON-style data
+- Updating multiple UI fields dynamically from one user action
+- Combining Bulma utility classes with custom CSS for a polished layout
+- Building a project that is simple enough for beginners but still feels complete
+
+## Table of Contents
+
+- [Live Link](#live-link)
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Project Structure](#project-structure)
 - [Credits](#credits)
 - [License](#license)
 
-## Installation
+## Live Link
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+[Open the deployed app](file:///C:/Users/lexid/code/Bootcamp/bootcamp-2026/project_1/index.html)
 
 ## Features
 
-If your project has a lot of features, list them here.
+- Search by zodiac sign (case-insensitive, so "leo" and "Leo" both work)
+- Friendly validation messages for blank or invalid sign entries
+- Displays horoscope details including:
+    - Sign and date
+    - Theme and advice text
+    - Overall, love, career, money, and health scores
+    - Lucky color, number, and time window
+- Responsive layout for desktop and mobile
+- Styled with Bulma and custom gradients, cards, and animations
 
-## How to Contribute
+## Installation
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+No dependencies or build steps are required.
 
-## Tests
+1. Clone or download this repository.
+2. Open the project folder.
+3. Open index.html in your browser.
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+## Usage
+
+1. Enter a zodiac sign in the input field (example: Aries, Virgo, Pisces).
+2. Click Get Horoscope.
+3. Read the generated daily horoscope details in the output panel.
+
+If nothing shows up, check your spelling and try one of the supported signs below.
+
+### Supported Signs
+
+Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces.
+
+## Project Structure
+
+- index.html: app layout and form/output markup
+- assets/css/bulma.min.css: Bulma framework styles
+- assets/css/style.css: custom theme, layout tweaks, and responsive styling
+- assets/images/Give Me a Sign.png: screenshot/image asset used in the project
+- assets/js/script.js: horoscope data store and app logic
+
+## Credits
+
+- [Bulma](https://bulma.io/) for the CSS framework
+- Horoscope dataset labeled in source comments as local classroom snapshot from FreeAstroAPI
+
+## License
+
+MIT License
+
+Copyright (c) 2026 Lexi Devine
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
